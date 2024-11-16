@@ -7,7 +7,7 @@ const Footer = () => {
       <left>
         <ul className="flex justify-around mt-7">
           <li>
-            <div className="title-style">Contact & E-mail</div>
+            <div className="title-style">Contact & e-mail</div>
             <span>+91 7903435992</span>
             <br />
             <span>ichinmay2461@gmail.com</span>

@@ -2,5 +2,5 @@
     @apply h-6 w-6 rounded-full border border-black mb-1;
   }
 .title-style{
-    @apply text-lg font-bold text-gray-900;
+    @apply text-lg font-bold text-gray-900 border border-black p-2 rounded-2xl mb-2;
 }
