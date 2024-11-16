@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
+
+
+// git add .
+// git commit -m "change in hader"
+// git push -u origin main
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
 
@@ -33,7 +38,7 @@ const Navbar = () => {
       <img src="./images/logo.png" alt="logo" className="h-10" />
 
       <ul className="flex text-xl space-x-8">
-        {["about", "service", "project", "contact", "FAQ"].map((section) => (
+        {["about", "service", "project", "contact", "faq"].map((section) => (
           <li
             key={section}
             className={`hover:underline hover:decoration-white transform hover:scale-105 transition duration-200 cursor-pointer ${
