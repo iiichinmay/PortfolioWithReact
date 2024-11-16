@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 
-
-// git add .
-// git commit -m "change in hader"
-// git push -u origin main
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
 

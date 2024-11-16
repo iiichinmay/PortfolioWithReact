@@ -16,7 +16,7 @@ const Main = () => {
 
   return (
     <div
-      className="bg-black min-h-screen text-yellow-300  p-0 "
+      className="bg-black h-screen text-yellow-300  p-0 "
       id="about"
     >
       <h1 className="text-5xl font-Cinzel text-center py-5  ">Web Developer</h1>
@@ -26,7 +26,7 @@ const Main = () => {
           <h1 className="text-4xl mb-2">Hello, I'm Chinmay</h1>
 
           <h1 className="text-xl font-SGummy">
-            I'm a <span className="text-white">{text}</span>
+            I'm a <span className="text-white text-2xl">{text}</span>
             <span style={{ color: "red" }}>
               <Cursor />
             </span>

@@ -1,0 +1,6 @@
+.icon-style {
+    @apply h-6 w-6 rounded-full border border-black mb-1;
+  }
+.title-style{
+    @apply text-lg font-bold text-gray-900;
+}
