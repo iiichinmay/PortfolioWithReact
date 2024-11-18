@@ -5,16 +5,16 @@ const Footer = () => {
     <main className="bg-yellow-300 h-52 ">
       <div className="flex items-center justify-center"></div>
       <left className='flex gap-5 justify-around'>
-        <ul className="flex justify-around mt-7  w-[70%] ">
+        <ul className="flex justify-around mt-7 w-[70%] ">
           <li>
-            <div className="title-style">Contact & e-mail</div>
-            <span>+91 7903435992</span>
+            <div className="title-style">Contact Info</div>
+            <span><b>Phone:</b> +91 7903435992</span>
             <br />
-            <span>ichinmay2461@gmail.com</span>
+            <span><b>e-mail:</b> ichinmay2461@gmail.com</span>
           </li>
 
           <li>
-            <div className="title-style">Social Media Handles</div>
+            <div className="title-style">Do Follow on :- </div>
             {[
               {
                 name: "Linkedin",

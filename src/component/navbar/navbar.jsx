@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "service", "project", "contact", "faq"];
+      const sections = ["about", "service", "project", "technologies", "faq"];
       let currentSection = "";
 
       sections.forEach((section) => {
@@ -34,7 +34,7 @@ const Navbar = () => {
       <img src="./images/logo.png" alt="logo" className="h-10" />
 
       <ul className="flex text-xl space-x-8">
-        {["about", "service", "project", "contact", "faq"].map((section) => (
+        {["about", "service", "project", "technologies", "faq"].map((section) => (
           <li
             key={section}
             className={`hover:underline hover:decoration-white transform hover:scale-105 transition duration-200 cursor-pointer ${

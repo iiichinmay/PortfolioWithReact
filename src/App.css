@@ -1,6 +1,17 @@
 .icon-style {
     @apply h-6 w-6 rounded-full border border-black mb-1;
   }
+
 .title-style{
-    @apply text-lg font-bold text-gray-900 border border-black p-2 rounded-2xl mb-2;
+    @apply text-lg font-bold bg-white shadow-2xl shadow-black text-black border border-black p-2 rounded-2xl mb-2 py-1;
+}
+
+.style-services{
+  @apply hover:text-blue-600 cursor-not-allowed transform hover:scale-105 transition duration-200 p-2 rounded-full shadow-2xl shadow-black ;
+  user-select: none;
+}
+
+.services-img{
+  @apply w-52 h-52 object-cover border border-black rounded-full transform transition duration-500 hover:rotate-[-360deg] cursor-grab shadow-2xl shadow-black;
+
 }
