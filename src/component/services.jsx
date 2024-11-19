@@ -2,7 +2,7 @@ import React from "react";
 
 const services = () => {
   return (
-    <div className="min-h-full h-100vh bg-yellow-300 text-black mt-2" id="service">
+    <div className="min-h-full bg-yellow-300 text-black mt-2" id="service">
       <h1 className="text-center text-4xl font-Cinzel font-bold "><u>_</u><u> Services <u>_</u></u></h1>
       <section className="flex gap-10 justify-between  h-full">
         <left className=" m-5 p-5  grid grid-cols-2 gap-4 ml-[8rem]">
