@@ -1,44 +1,50 @@
 import React from "react";
 
-const services = () => {
+const Services = () => {
   return (
-    <div className="min-h-full bg-yellow-300 text-black mt-2" id="service">
-      <h1 className="text-center text-4xl font-Cinzel font-bold "><u>_</u><u> Services <u>_</u></u></h1>
-      <section className="flex gap-10 justify-between  h-full">
-        <left className=" m-5 p-5  grid grid-cols-2 gap-4 ml-[8rem]">
-          <img
-            src="./images/dev.png"
-            alt="develope"
-            class="services-img"
-          />
-          <img
-            src="./images/design.jpg"
-            alt="design"
-            class="services-img"
-          />
+    <div className="min-h-screen bg-yellow-300 text-black py-5 mt-1" id="service">
+      <h1 className="text-center text-2xl sm:text-4xl font-Cinzel font-bold">
+        <u>_</u>
+        <u> Services <u>_</u></u>
+      </h1>
+      <section className="flex flex-wrap gap-10 justify-center items-center h-full mt-10 px-4">
+        {/* Left Side - Images */}
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-10 w-full sm:w-3/4 lg:w-1/2">
+  <img
+    src="./images/dev.png"
+    alt="development"
+    className="services-img h-24 w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover"
+  />
+  <img
+    src="./images/design.jpg"
+    alt="design"
+    className="services-img w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover"
+  />
+  <img
+    src="./images/edit.jpg"
+    alt="editing"
+    className="services-img w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover"
+  />
+  <img
+    src="./images/content.jpg"
+    alt="content"
+    className="services-img w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover"
+  />
+</div>
 
-          <img
-            src="./images/edit.jpg"
-            alt="editing"
-            class="services-img"
-          />
-          <img
-            src="./images/content.jpg"
-            alt="content"
-            class="services-img"
-          />
-        </left>
-        <right className="mr-[8rem] m-5 p-5 mt-[7rem]">
-          <ul className="text-4xl font-SGummy -mt-16 leading-relaxed space-y-5 p-2">
-            <li className="style-services">* Web Development </li>
-            <li className="style-services">* Web Designing </li>
-            <li className="style-services">* Video Editing </li>
-            <li className="style-services">* Content Writting </li>
+
+        {/* Right Side - Services List */}
+        <div className="w-full sm:w-3/4 lg:w-1/3 mt-10 sm:mt-0">
+          <ul className="text-lg sm:text-2xl lg:text-4xl font-SGummy leading-relaxed space-y-5">
+            <li className="style-services">* Web Development</li>
+            <li className="style-services">* Web Designing</li>
+            <li className="style-services">* Video Editing</li>
+            <li className="style-services">* Content Writing</li>
           </ul>
-        </right>
+        </div>
       </section>
     </div>
   );
 };
 
-export default services;
+export default Services;

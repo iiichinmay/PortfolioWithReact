@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // For mobile menu toggle
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,7 +14,10 @@ const Navbar = () => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          if (
+            rect.top <= window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2
+          ) {
             currentSection = section;
           }
         }
@@ -28,12 +31,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex justify-between items-center bg-black text-white py-3 px-8 sticky top-0 w-full"
-      style={{ boxShadow: "0 4px 10px rgba(255, 255, 255, 0.3)", zIndex: 1000 }}
+      className="flex justify-between items-center bg-black text-white py-3 px-8 sticky top-0 w-full z-50 shadow-md"
     >
+      {/* Logo */}
       <img src="./images/logo.png" alt="logo" className="h-10" />
 
-      <ul className="flex text-xl space-x-8">
+      {/* Desktop Navigation */}
+      <ul className="hidden md:flex text-xl space-x-8">
         {["about", "service", "project", "technologies", "faq"].map((section) => (
           <li
             key={section}
@@ -47,6 +51,39 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      {/* Mobile Hamburger Menu */}
+      <div className="md:hidden">
+        <button
+          className="focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <div className="w-8 h-1 bg-white mb-1"></div>
+          <div className="w-8 h-1 bg-white mb-1"></div>
+          <div className="w-8 h-1 bg-white"></div>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <ul className="absolute top-full left-0 w-full mob-nav text-white text-center flex flex-col space-y-4 py-4 md:hidden z-40">
+          {["about", "service", "project", "technologies", "faq"].map(
+            (section) => (
+              <li
+                key={section}
+                className={`hover:underline transform hover:scale-105 transition duration-200 cursor-pointer ${
+                  activeSection === section ? "text-black-300" : ""
+                }`}
+                onClick={() => setIsMenuOpen(false)} 
+              >
+                <Link to={section} smooth={true} duration={500}>
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </Link>
+              </li>
+            )
+          )}
+        </ul>
+      )}
     </nav>
   );
 };
