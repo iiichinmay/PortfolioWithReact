@@ -31,12 +31,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex justify-between items-center bg-black text-white py-3 px-8 sticky top-0 w-full z-50 shadow-md"
+      className="flex justify-between items-center bg-black text-white py-3 px-8 sticky top-0 w-full z-50 shadow-sm nav-shadow"
     >
-      {/* Logo */}
       <img src="./images/logo.png" alt="logo" className="h-10" />
 
-      {/* Desktop Navigation */}
       <ul className="hidden md:flex text-xl space-x-8">
         {["about", "service", "project", "technologies", "faq"].map((section) => (
           <li
@@ -52,7 +50,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Mobile Hamburger Menu */}
+      
       <div className="md:hidden">
         <button
           className="focus:outline-none"

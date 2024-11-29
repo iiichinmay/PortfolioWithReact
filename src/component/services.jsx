@@ -7,18 +7,18 @@ const Services = () => {
         <u>_</u>
         <u> Services <u>_</u></u>
       </h1>
-      <section className="flex flex-wrap gap-10 justify-center items-center h-full mt-10 px-4">
+      <section className="flex flex-wrap gap-10 justify-center items-center h-full mt-10 px-6">
         {/* Left Side - Images */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-10 w-full sm:w-3/4 lg:w-1/2">
+        <div className="grid grid-cols-2 sm:gap-6 lg:gap-10 w-full sm:w-3/4 lg:w-1/2 ">
   <img
     src="./images/dev.png"
     alt="development"
-    className="services-img h-24 w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover"
+    className="services-img h-24 w-full max-w-xs h-32 sm:h-40  lg:h-48 mx-auto object-cover"
   />
   <img
     src="./images/design.jpg"
     alt="design"
-    className="services-img w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover"
+    className="services-img w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover ml-8"
   />
   <img
     src="./images/edit.jpg"
@@ -28,7 +28,7 @@ const Services = () => {
   <img
     src="./images/content.jpg"
     alt="content"
-    className="services-img w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover"
+    className="services-img w-full max-w-xs h-32 sm:h-40 lg:h-48 mx-auto object-cover ml-8"
   />
 </div>
 

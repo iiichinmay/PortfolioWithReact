@@ -43,27 +43,15 @@ const Main = () => {
 
         {/* Right Section */}
         <div className="w-full sm:w-1/3 lg:w-1/4 flex justify-center mt-6 sm:mt-0">
-  <div className="h-40 sm:h-64 md:h-80 lg:h-96 xl:h-[24rem] aspect-square rounded-full overflow-hidden border border-black">
-    <img
-      src="./images/meee.jpg"
-      alt="propic"
-      className="w-full h-full object-cover"
-    />
-  </div>
-</div>
-
+          <div className="h-40 sm:h-64 md:h-80 lg:h-96 xl:h-[24rem] aspect-square rounded-full overflow-hidden border border-black">
+            <img
+              src="./images/meee.jpg"
+              alt="propic"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </section>
-
-      {/* Arrow Section */}
-      <div className="flex justify-center mt-10 sm:mt-16">
-        <h1 className="text-white text-2xl">
-          \/
-          <br />
-          \/
-          <br />
-          \/
-        </h1>
-      </div>
     </div>
   );
 };
