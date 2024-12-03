@@ -8,7 +8,6 @@
 
 .style-services {
   @apply hover:text-blue-600 cursor-not-allowed transform hover:scale-105 transition duration-200 p-2 rounded-full shadow-2xl shadow-black;
-  user-select: none;
 }
 
 .services-img{
@@ -23,8 +22,10 @@
 }
 
 .mob-nav{
-  background-color: rgba(78, 78, 78, 0.363);
+  background-color: rgba(145, 145, 145, 0.3);
+  backdrop-filter: blur(3px);
+  border: 1px solid white;
 }
 .nav-shadow{
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.678);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.788);
 }
