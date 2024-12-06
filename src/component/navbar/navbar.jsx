@@ -49,7 +49,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
       
       <div className="md:hidden">
         <button
@@ -64,7 +63,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className="absolute top-full left-0 w-full mob-nav text-red-500 text-center flex flex-col space-y-4 py-4 md:hidden z-40 text-xl">
+        <ul className="absolute top-full h-screen gap-10 right-0 w-[50%]  mob-nav text-white text-center flex flex-col space-y-4 py-4 md:hidden z-40 text-xl">
           {["about", "service", "project", "technologies", "faq"].map(
             (section) => (
               <li
