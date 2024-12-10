@@ -43,7 +43,7 @@ const Main = () => {
 
         {/* Right Section */}
         <div className="w-full sm:w-1/3 lg:w-1/4 flex justify-center mt-6 sm:mt-0">
-          <div className="h-40 sm:h-64 md:h-80 lg:h-96 xl:h-[24rem] aspect-square rounded-full overflow-hidden border border-black">
+          <div className="h-40 sm:h-64 md:h-80 lg:h-96 xl:h-[24rem] aspect-square rounded-full overflow-hidden ring-2  ">
             <img
               src="./images/meee.jpg"
               alt="propic"

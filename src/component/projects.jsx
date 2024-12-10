@@ -10,7 +10,7 @@ const Projects = () => {
           Projects <u>_</u>
         </u>
       </h1>
-      <p className="text-white">Projects are coming soon... </p>
+      <p className="text-[#79ffd2] flex justify-center mx-auto w-fit shadow-md shadow-white bg-[#50505000] rounded-lg p-2 mt-4">Projects are coming soon...</p>
 
       {/* Project Cards */}
       <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-10 space-y-10 sm:space-y-0 mt-16 px-5">
@@ -36,7 +36,7 @@ const Projects = () => {
           style={{ boxShadow: "0 4px 10px rgba(255, 255, 255, 0.5)" }}
         >
           <img
-            onClick={() => (window.location.href = "https://www.youtube.com/")}
+            onClick={() => (window.location.href = "")}
             src="./images/tools.png"
             alt="ToolKit"
             className="w-fit max-w-[300px] h-52 object-cover cursor-pointer"
