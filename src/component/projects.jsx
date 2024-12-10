@@ -10,6 +10,7 @@ const Projects = () => {
           Projects <u>_</u>
         </u>
       </h1>
+      <p className="text-white">Projects are coming soon... </p>
 
       {/* Project Cards */}
       <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-10 space-y-10 sm:space-y-0 mt-16 px-5">
