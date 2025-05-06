@@ -10,7 +10,7 @@ const Projects = () => {
           Projects <u>_</u>
         </u>
       </h1>
-      <p className="text-[#79ffd2] flex justify-center mx-auto w-fit shadow-md shadow-white bg-[#50505000] rounded-lg p-2 mt-4">Projects are coming soon...</p>
+      <p className="text-[#79ffd2] flex justify-center mx-auto w-fit shadow-md shadow-white bg-[#50505000] rounded-lg px-8 p-2 mt-4">Coming soon...</p>
 
       {/* Project Cards */}
       <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-10 space-y-10 sm:space-y-0 mt-16 px-5">
